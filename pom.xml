@@ -12,6 +12,8 @@
 
     <modules>
 		<module>paridade</module>
+		<module>calendario</module>
+		<module>funcoes</module>
     </modules>
 
     <build>
