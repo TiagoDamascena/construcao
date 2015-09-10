@@ -5,7 +5,7 @@ package br.ufg.inf.es.construcao.produto;
  */
 public class Produto {
     public static int produto(int a, int b) {
-        if (a < 0 && b < 0) {
+        if (a < 0 || b < 0) {
             throw new IllegalArgumentException("a ou b inválido");
         }
 
