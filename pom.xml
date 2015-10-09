@@ -15,6 +15,7 @@
 		<module>calendario</module>
 		<module>funcoes</module>
                 <module>produto</module>
+		<module>primos</module>
     </modules>
 
     <build>
