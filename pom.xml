@@ -16,6 +16,7 @@
 		<module>funcoes</module>
                 <module>produto</module>
 		<module>primos</module>
+		<module>logaritmo</module>
     </modules>
 
     <build>
