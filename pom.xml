@@ -17,6 +17,7 @@
                 <module>produto</module>
 		<module>primos</module>
 		<module>logaritmo</module>
+		<module>permutacao</module>
     </modules>
 
     <build>
