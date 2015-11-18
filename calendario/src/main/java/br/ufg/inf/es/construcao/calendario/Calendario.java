@@ -40,9 +40,8 @@ public class Calendario {
             ano = ano - 1;
         }
 
-        int s = dia + 2 * mes + (3 * (mes + 1) / 5) + ano + ano / 4
-                - ano / 100 + ano / 400;
+        int diaDaSemana = dia + 2 * mes + (3 * (mes + 1) / 5) + ano + ano / 4 - ano / 100 + ano / 400;
 
-        return s % 7;
+        return diaDaSemana % 7;
     }
 }

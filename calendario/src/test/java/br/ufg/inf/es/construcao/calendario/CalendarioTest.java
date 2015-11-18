@@ -22,14 +22,14 @@ public class CalendarioTest {
     }
 
     @Test
-    public void test27082015() throws Exception {
+    public void testData() throws Exception {
 
         int dds = Calendario.diaDaSemana(27, 8, 2015);
         assertEquals(3, dds);
     }
 
     @Test
-    public void test29022016() throws Exception {
+    public void testBissexto() throws Exception {
 
         int dds = Calendario.diaDaSemana(29, 2, 2016);
         assertEquals(0, dds);

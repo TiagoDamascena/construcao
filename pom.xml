@@ -14,9 +14,8 @@
 		<module>paridade</module>
 		<module>calendario</module>
 		<module>funcoes</module>
-                <module>produto</module>
+        <module>produto</module>
 		<module>primos</module>
-		<module>logaritmo</module>
 		<module>permutacao</module>
     </modules>
 
