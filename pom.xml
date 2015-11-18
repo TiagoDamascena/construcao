@@ -17,6 +17,7 @@
         <module>produto</module>
 		<module>primos</module>
 		<module>permutacao</module>
+        <module>potencia</module>
     </modules>
 
     <build>
