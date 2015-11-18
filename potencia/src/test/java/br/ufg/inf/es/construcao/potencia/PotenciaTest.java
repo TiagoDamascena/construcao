@@ -25,17 +25,17 @@ public class PotenciaTest {
     @Test
      public void testCasosTriviais() throws Exception {
         
-        assertEquals(1, Potencia.potencia(1, 2));
-        assertEquals(1, Potencia.potencia(2, 0));
-        assertEquals(2, Potencia.potencia(2, 1));
-        assertEquals(4, Potencia.potencia(2, 2));
+        assertEquals(1, Potencia.potencia(1, 2), 0.0);
+        assertEquals(1, Potencia.potencia(2, 0), 0.0);
+        assertEquals(2, Potencia.potencia(2, 1), 0.0);
+        assertEquals(4, Potencia.potencia(2, 2), 0.0);
     }
 
     @Test
      public void testCasosNaoTriviais() throws Exception {
         
-        assertEquals(25, Potencia.potencia(5, 2));
-        assertEquals(2187, Potencia.potencia(3, 7));
+        assertEquals(25, Potencia.potencia(5, 2), 0.0);
+        assertEquals(2187, Potencia.potencia(3, 7), 0.0);
     }
     
 }
