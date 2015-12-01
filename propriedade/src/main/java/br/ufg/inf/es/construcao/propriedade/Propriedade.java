@@ -22,7 +22,7 @@ public class Propriedade {
         }
         
         int i = numero / 100;
-        int j = (numero - 100) % 10;
+        int j = (numero - 100) / 10;
         int k = numero % 10;
         
         int n = (i*i*i) + (j*j*j) + (k*k*k);
