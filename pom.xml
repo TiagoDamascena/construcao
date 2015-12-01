@@ -18,6 +18,7 @@
 		<module>primos</module>
 		<module>permutacao</module>
         <module>potencia</module>
+        <module>propriedade</module>
     </modules>
 
     <build>
