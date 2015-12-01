@@ -2,7 +2,7 @@ package br.ufg.inf.es.construcao.propriedade;
 
 import org.junit.Test;
 
-public class PotenciaTest {
+public class PropriedadeTest {
 
     @Test(expected=IllegalArgumentException.class)
     public void testNumeroInvalido() {
@@ -20,7 +20,6 @@ public class PotenciaTest {
 
     @Test
      public void testCasosTriviais() throws Exception {
-        
         Assert.assertTrue(Propriedade.propriedade153(153));
         Assert.assertTrue(Propriedade.propriedade3025(3025));
     }
@@ -30,11 +29,6 @@ public class PotenciaTest {
         
         Assert.assertTrue(Propriedade.propriedade153(153));
         Assert.assertTrue(Propriedade.propriedade3025(9801));
-    }
-    
-    @Test
-    public void testCasosNaoTriviais() throws Exception {
-        
         Assert.assertFalse(Propriedade.propriedade153(12));
         Assert.assertFalse(Propriedade.propriedade3025(3205));
     }
