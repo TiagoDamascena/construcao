@@ -1,7 +1,5 @@
 package br.ufg.inf.es.construcao.potencia;
 
-import br.ufg.inf.es.construcao.produto;
-
 /**
  * Função para calculo da potencia de um numero.
  */
@@ -66,7 +64,7 @@ public class Potencia {
         double potencia = base;
         
         while (i < expoente) {
-            potencia = Produto.produto(potencia, base);
+            potencia = potencia * base;
             i = i + 1;
         }
         
