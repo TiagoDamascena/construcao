@@ -25,7 +25,7 @@ public class MdcTest {
     public void testCasosTriviaisMdc() throws Exception {
         assertEquals(1, Mdc.mdc(2, 1));
         assertEquals(2, Mdc.mdc(2, 2));
-        assertEquals(3, Mdc.mdc(3, 6));
+        assertEquals(3, Mdc.mdc(6, 3));
     }
 
     @Test
@@ -55,7 +55,7 @@ public class MdcTest {
      public void testCasosTriviaisMdc2() throws Exception {
         assertEquals(1, Mdc.mdc(2, 1));
         assertEquals(2, Mdc.mdc(2, 2));
-        assertEquals(3, Mdc.mdc(3, 6));
+        assertEquals(3, Mdc.mdc(6, 3));
     }
 
     @Test
