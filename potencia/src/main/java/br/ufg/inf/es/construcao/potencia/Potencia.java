@@ -63,6 +63,10 @@ public class Potencia {
         int i = 1;
         double potencia = base;
         
+        if (expoente == 0) {
+            potencia = 1;
+        }
+        
         while (i < expoente) {
             potencia = potencia * base;
             i = i + 1;
