@@ -7,6 +7,7 @@
     <groupId>br.ufg.inf.es.construcao</groupId>
     <artifactId>produto</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
