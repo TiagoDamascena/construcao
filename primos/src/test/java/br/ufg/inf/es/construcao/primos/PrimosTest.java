@@ -47,15 +47,15 @@ public class PrimosTest {
 
     @Test
     public void testDoisPrimoCrivo() {
-        int[] a = new int[2];
-        Primos.crivoEratostenes(a, 2);
+        int[] a = new int[3];
+        Primos.crivoEratostenes(a, 3);
         Assert.assertEquals(0, a[2]);
     }
 
     @Test
     public void testCemNaoPrimo() {
-        int[] a = new int[100];
-        Primos.crivoEratostenes(a, 100);
+        int[] a = new int[101];
+        Primos.crivoEratostenes(a, 101);
         Assert.assertEquals(1, a[100]);
     }
 }
