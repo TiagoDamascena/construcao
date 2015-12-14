@@ -53,7 +53,7 @@ public class Primos {
             throw new IllegalArgumentException("número inválido");
         }
 
-        if (vetor.length < numero) {
+        if (vetor.length <= numero) {
             throw new IllegalArgumentException("tamanho do vetor inválido");
         }
 
