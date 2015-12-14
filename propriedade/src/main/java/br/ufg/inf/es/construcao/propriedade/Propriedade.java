@@ -1,7 +1,7 @@
 package br.ufg.inf.es.construcao.propriedade;
 
 /**
- * Função para verificação da propriedades de um número.
+ * Função para verificação das propriedades de um número.
  */
 public class Propriedade {
 
@@ -25,14 +25,9 @@ public class Propriedade {
         int j = (numero - 100) / 10;
         int k = numero % 10;
         
-        int n = (i*i*i) + (j*j*j) + (k*k*k);
+        int n = (i * i * i) + (j * j * j) + (k * k * k);
         
-        if(n == numero) {
-            return true;
-        }
-        else {
-            return false;
-        }
+        return n == numero;
     }
     
     /**
@@ -55,12 +50,8 @@ public class Propriedade {
         int j = numero % 100;
         
         int n = i + j;
+        n = n * n;
         
-        if(n*n == numero) {
-            return true;
-        }
-        else {
-            return false;
-        }
+        return n == numero;
     }
 }

@@ -1,7 +1,6 @@
 package br.ufg.inf.es.construcao.funcoes;
 
 import org.junit.Test;
-
 import static junit.framework.Assert.assertEquals;
 
 public class MatematicaTest {

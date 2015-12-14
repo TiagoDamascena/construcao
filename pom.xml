@@ -11,14 +11,14 @@
     <name>Exemplos Construção de Software</name>
 
     <modules>
-		<module>paridade</module>
 		<module>calendario</module>
+        <module>paridade</module>
 		<module>funcoes</module>
         <module>produto</module>
-		<module>primos</module>
-		<module>permutacao</module>
         <module>potencia</module>
         <module>propriedade</module>
+		<module>primos</module>
+		<module>permutacao</module>       
     </modules>
 
     <build>

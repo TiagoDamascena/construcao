@@ -4,33 +4,53 @@ import org.junit.Test;
 import org.junit.Assert;
 
 public class PropriedadeTest {
-
-    @Test(expected=IllegalArgumentException.class)
-    public void testNumeroInvalido() {
+    
+    //Testes propriedade153
+    @Test(expected = IllegalArgumentException.class)
+    public void testNumeroInvalido153() {
         Propriedade.propriedade153(-2);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testCasoDeFronteira153() {
+        Propriedade.propriedade153(-1);
+        Propriedade.propriedade153(1000);
+    }
+
+    @Test
+    public void testCasoTrivial153() throws Exception {
+        Assert.assertTrue(Propriedade.propriedade153(153));
+    }
+
+    @Test
+    public void testFalse153() throws Exception {
+        Assert.assertFalse(Propriedade.propriedade153(12));
+    }
+    
+    //Teste propriedade3025
+    @Test(expected = IllegalArgumentException.class)
+    public void testNumeroInvalido3025() {
         Propriedade.propriedade3025(-5);
     }
 
-    @Test(expected=IllegalArgumentException.class)
-    public void testCasoDeFronteira() {
-        Propriedade.propriedade153(-1);
+    @Test(expected = IllegalArgumentException.class)
+    public void testCasoDeFronteira3025() {
         Propriedade.propriedade3025(-1);
-        Propriedade.propriedade153(1000);
         Propriedade.propriedade3025(10000);
     }
 
     @Test
-    public void testCasosTriviais() throws Exception {
-        Assert.assertTrue(Propriedade.propriedade153(153));
+    public void testCasoTrivial3025() throws Exception {
         Assert.assertTrue(Propriedade.propriedade3025(3025));
     }
 
     @Test
-    public void testCasosNaoTriviais() throws Exception {
-        
-        Assert.assertTrue(Propriedade.propriedade153(153));
+    public void testCasoNaoTrivial3025() throws Exception {
         Assert.assertTrue(Propriedade.propriedade3025(9801));
-        Assert.assertFalse(Propriedade.propriedade153(12));
+    }
+    
+    @Test
+    public void testFalse3025() throws Exception {
         Assert.assertFalse(Propriedade.propriedade3025(3205));
     }
 }

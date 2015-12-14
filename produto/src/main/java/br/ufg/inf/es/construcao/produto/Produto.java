@@ -6,20 +6,20 @@ package br.ufg.inf.es.construcao.produto;
 public class Produto {
     
     /**
-     * Calcula o produto de dois números.
+     * Calcula o produto de dois números através de somas.
      * @param a O primeiro número a ser multiplicado.
      * @param b O segundo número a ser multiplicado.
      * @return Produto de a por b.
      * @throws IllegalArgumentException Se algum dos argumentos
      * for menor que zero.
      */
-    public static int produto(int a, int b) {
+    public static double produto(double a, double b) {
         if (a < 0 || b < 0) {
             throw new IllegalArgumentException("a ou b inválido");
         }
 
         int i = 1;
-        int soma = 0;
+        double soma = 0;
         while (i <= b) {
             soma = soma + a;
             i = i + 1;
