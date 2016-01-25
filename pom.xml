@@ -21,6 +21,7 @@
 		<module>permutacao</module>
         <module>mdc</module>
         <module>harmonico</module>
+        <module>somatorio</module>
     </modules>
 
     <build>
