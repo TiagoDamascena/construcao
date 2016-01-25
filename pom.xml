@@ -26,6 +26,7 @@
         <module>fatorial</module>
         <module>razaoAurea</module>
         <module>quadradoPerfeito</module>
+        <module>divisao</module>
     </modules>
 
     <build>
