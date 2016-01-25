@@ -25,6 +25,7 @@
         <module>pi</module>
         <module>fatorial</module>
         <module>razaoAurea</module>
+        <module>quadradoPerfeito</module>
     </modules>
 
     <build>
