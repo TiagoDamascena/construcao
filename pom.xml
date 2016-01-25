@@ -27,6 +27,7 @@
         <module>razaoAurea</module>
         <module>quadradoPerfeito</module>
         <module>divisao</module>
+        <module>mod</module>
     </modules>
 
     <build>
