@@ -24,6 +24,7 @@
         <module>somatorio</module>
         <module>pi</module>
         <module>fatorial</module>
+        <module>razaoAurea</module>
     </modules>
 
     <build>
