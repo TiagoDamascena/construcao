@@ -19,7 +19,8 @@
         <module>propriedade</module>
 		<module>primos</module>
 		<module>permutacao</module>
-        <module>mdc</module>       
+        <module>mdc</module>
+        <module>harmonico</module>
     </modules>
 
     <build>
