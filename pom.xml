@@ -28,6 +28,7 @@
         <module>quadradoPerfeito</module>
         <module>divisao</module>
         <module>mod</module>
+        <module>fibonacci</module>
     </modules>
 
     <build>
