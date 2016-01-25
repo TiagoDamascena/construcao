@@ -23,6 +23,7 @@
         <module>harmonico</module>
         <module>somatorio</module>
         <module>pi</module>
+        <module>fatorial</module>
     </modules>
 
     <build>
