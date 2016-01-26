@@ -32,6 +32,7 @@
         <module>fibonacci</module>
         <module>somaDivisores</module>
         <module>amigos</module>
+        <module>luhn</module>
     </modules>
 
     <build>
