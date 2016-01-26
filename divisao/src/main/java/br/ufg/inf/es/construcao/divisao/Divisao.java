@@ -7,9 +7,12 @@ public class Divisao {
     
     /**
      * Realiza a divisão de um número por outro através de somas sucessivas
+     *
      * @param divisor Divisor da divisão.
      * @param dividendo Dividendo da divisão.
+     *
      * @return resultado da divisão.
+     *
      * @throws IllegalArgumentException caso um dos valores esteja fora da faixa admitida.
      * Divisor deve ser maior ou igual a 0
      * Dividendo deve ser maior que 0
@@ -36,10 +39,14 @@ public class Divisao {
     
     /**
      * Realiza a divisão de um número por outro através de subtrações sucessivas
+     *
      * @param divisor Divisor da divisão.
      * @param dividendo Dividendo da divisão.
+     *
      * @return resultado da divisão.
+     *
      * @throws IllegalArgumentException caso um dos valores esteja fora da faixa admitida.
+     *
      * Divisor deve ser maior ou igual a 0
      * Dividendo deve ser maior que 0
      */

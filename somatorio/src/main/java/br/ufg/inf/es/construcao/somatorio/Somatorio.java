@@ -1,18 +1,18 @@
 package br.ufg.inf.es.construcao.somatorio;
 
 /**
- * Função de somatório a partir de um número
+ * FunÃ§Ã£o de somatÃ³rio a partir de um nÃºmero
  */
 public class Somatorio {
     
     /**
-     * Faz um somatório a partir de um número
-     * @param numero numero a partir do qual será realizado esse somatório
-     * @return resultado do somatório
+     * Faz um somatÃ³rio a partir de um nÃºmero
+     * @param numero numero a partir do qual serÃ¡ realizado esse somatÃ³rio
+     * @return resultado do somatÃ³rio
      */
     public static double somatorio(int numero) {
         if(numero < 1) {
-            throw new IllegalArgumentException("numero inválido");
+            throw new IllegalArgumentException("numero invÃ¡lido");
         }
         
         int i = 1;

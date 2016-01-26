@@ -7,8 +7,11 @@ public class Fatorial {
     
     /**
      * Calcula o fatorial de um número
+     *
      * @param numero número para calcular o fatorial.
+     *
      * @return fatorial.
+     *
      * @throws IllegalArgumentException caso o numero seja menor que 1.
      */
     public static int fatorial(int numero) {

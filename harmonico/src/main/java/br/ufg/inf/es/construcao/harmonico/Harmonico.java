@@ -7,6 +7,7 @@ public class Harmonico {
     
     /**
      * Calcula o numero harmônico de um número
+     *
      * @param numero número do qual será calculado o harmônico
      * 
      * @return o harmônico do número

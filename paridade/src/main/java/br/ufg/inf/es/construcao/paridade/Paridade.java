@@ -7,7 +7,9 @@ public class Paridade {
 
     /**
      * Verifica paridade de um número.
+     *
      * @param numero Número cuja paridade é verificada.
+     *
      * @return {@code true} se o número fornecido é
      * par e {@code false}, caso contrário.
      */

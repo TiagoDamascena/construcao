@@ -60,9 +60,9 @@ public class Mdc {
         
         while (a != b) {
             if(a > b) {
-                a = a - b;
+                a -= b;
             } else {
-                b = b - a;
+                b -= a;
             }
         }
         

@@ -7,9 +7,12 @@ public class Mod {
     
     /**
      * Calcula o mod(resto) de uma divisão
+     *
      * @param divisor Divisor da divisão
      * @param dividendo Dividendo da divisão
+     *
      * @return O resto da divisão
+     *
      * @throws IllegalArgumentException caso algum argumeto esteja fora
      * da faixa admitida.
      * Divisor deve ser maior que 0.

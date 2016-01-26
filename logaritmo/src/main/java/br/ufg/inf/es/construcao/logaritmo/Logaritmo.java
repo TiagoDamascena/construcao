@@ -1,38 +1,71 @@
 package br.ufg.inf.es.construcao.logaritmo;
 
+/**
+ * Fornece funções relacionadas a Logaritmos
+ */
 public class Logaritmo {
-
-    public static double logn(int n, int k) {
-        if (n < 1) {
-            throw new IllegalArgumentException("n");
+    
+    /**
+     * Calcula o log de um numero em uma determinada base
+     * 
+     * @param numero numero do calculo
+     * @param base base do calculo
+     * 
+     * @return resultado do log
+     * 
+     * @throws IllegalArgumentException quando numero for 
+     * menor que 1 e a base for menor que 2.
+     */
+    public static int logNaturalSimples(int numero, int base) {
+        if(numero < 1) {
+            throw new IllegalArgumentException("numero inválido");
         }
-
-        if (k < 2) {
-            throw new IllegalArgumentException("k");
+        
+        if(base < 2) {
+            throw new IllegalArgumentException("base inválida");
         }
-
+        
         int i = 2;
-        double e = n + 1;
-
-        while (i <= k) {
-            double p = potencia(n, i);
-            long f = fatorial(i);
-            e = e + p / f;
-            i = i + 1;
+        int expoente = numero+1;
+        
+        while(i <= base) {
+            int potencia = (int)Potencia.potencia(numero, i);
+            int fatorial = Fatorial.fatorial(i);
+            expoente += potencia/fatorial;
+            i++;
         }
-
-        return e;
+        return expoente;
     }
-
-    public static double potencia(int base, int expoente) {
-        return Math.pow(base, expoente);
-    }
-
-    public static long fatorial(int i) {
-        if (i == 1) {
-            return 1;
+    
+    /**
+     * Calcula o log de um numero em uma determinada base
+     * 
+     * @param numero numero do calculo
+     * @param base base do calculo
+     * 
+     * @return resultado do log
+     * 
+     * @throws IllegalArgumentException quando numero for 
+     * menor que 1 e a base for menor que 2.
+     */
+    public static int logN(int numero, int base) {
+        if(numero < 1) {
+            throw new IllegalArgumentException("numero inválido");
         }
-
-        return i * fatorial(i - 1);
+        
+        if(base < 2) {
+            throw new IllegalArgumentException("base inválida");
+        }
+        
+        int i = 2;
+        int expoente = numero+1;
+        int t = numero;
+        
+        while(i <= base) {
+            t *= numero/i;
+            expoente += t;
+            i++;
+        }
+        return expoente;
     }
 }

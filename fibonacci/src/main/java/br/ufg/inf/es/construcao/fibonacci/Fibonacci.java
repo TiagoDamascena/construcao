@@ -7,8 +7,11 @@ public class Fibonacci {
     
     /**
      * Calcula um determinado número na sequência de fibonacci.
+     *
      * @param numero qual número da sequência.
+     *
      * @return o número de fibonacci na posição solicitada dentro da sequência.
+     *
      * @throws  IllegalArgumentException caso o numero informado seja menor que 0.
      */
     public static int fibonacci(int numero) {

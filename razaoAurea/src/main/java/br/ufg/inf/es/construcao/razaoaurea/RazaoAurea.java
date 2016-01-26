@@ -7,11 +7,15 @@ public class RazaoAurea {
     
     /**
      * Calcula a razão Aurea a partir de dois termos e um fator
+     *
      * @param termo1 termo 1 da razão
      * @param termo2 termo 2 da razão
      * @param fator fator da razão
+     *
      * @return Razão Aurea
+     *
      * @throws IllegalArgumentException caso o termo1, termo2 ou fator não 
+     *
      * estejam na faixa admitida.
      * termo1 deve ser maior que 0
      * termo2 deve ser maior que o termo1
