@@ -1,5 +1,7 @@
 package br.ufg.inf.es.construcao.fatorial;
 
+import br.ufg.inf.es.construcao.produto.Produto;
+
 /**
  * Funções para cálculo do fatorial
  */
