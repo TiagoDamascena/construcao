@@ -30,6 +30,7 @@
         <module>divisao</module>
         <module>mod</module>
         <module>fibonacci</module>
+        <module>somaDivisores</module>
     </modules>
 
     <build>
