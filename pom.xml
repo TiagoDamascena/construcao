@@ -31,6 +31,7 @@
         <module>mod</module>
         <module>fibonacci</module>
         <module>somaDivisores</module>
+        <module>amigos</module>
     </modules>
 
     <build>
