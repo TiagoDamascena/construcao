@@ -1,5 +1,8 @@
 package br.ufg.inf.es.construcao.logaritmo;
 
+import br.ufg.inf.es.construcao.potencia.Potencia;
+import br.ufg.inf.es.construcao.fatorial.Fatorial;
+
 /**
  * Fornece funções relacionadas a Logaritmos
  */
