@@ -36,6 +36,7 @@
         <module>divide</module>
         <module>cpf</module>
         <module>equacao</module>
+        <module>ackerman</module>
     </modules>
 
     <build>
