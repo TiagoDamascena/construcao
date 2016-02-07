@@ -35,6 +35,7 @@
         <module>luhn</module>
         <module>divide</module>
         <module>cpf</module>
+        <module>equacao</module>
     </modules>
 
     <build>
