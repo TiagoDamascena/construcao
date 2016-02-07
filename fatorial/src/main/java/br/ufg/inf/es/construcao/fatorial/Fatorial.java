@@ -54,4 +54,17 @@ public class Fatorial {
         }
         return fatorial;
     }
+    
+    public static boolean atendeSomaFatorialDigitos(int n) {
+        if(n < 100) {
+            throw new IllegalArgumentException("numero inválido");
+        }
+        
+        int a = n / 100;
+        int b = (n - 100 * a) / 10;
+        int c = n % 10;
+        int s = fatorial(a) + fatorial(b) + fatorial(c);
+        
+        return s == n;
+    }
 }

@@ -1,6 +1,6 @@
 package br.ufg.inf.es.construcao.fatorial;
 
-import static junit.framework.Assert.assertEquals;
+import org.junit.Assert;
 import org.junit.Test;
 
 public class FatorialTest {
@@ -12,9 +12,9 @@ public class FatorialTest {
 
     @Test
     public void testFatorial() {
-        assertEquals(1, Fatorial.fatorial(1));
-        assertEquals(2, Fatorial.fatorial(2));
-        assertEquals(6, Fatorial.fatorial(3));
+        Assert.assertEquals(1, Fatorial.fatorial(1));
+        Assert.assertEquals(2, Fatorial.fatorial(2));
+        Assert.assertEquals(6, Fatorial.fatorial(3));
     }
     //Testes Fatorial Soma
     @Test(expected=IllegalArgumentException.class)
@@ -24,8 +24,19 @@ public class FatorialTest {
     
     @Test
     public void testFatorialSoma() {
-        assertEquals(1, Fatorial.fatorialSoma(1));
-        assertEquals(2, Fatorial.fatorialSoma(2));
-        assertEquals(6, Fatorial.fatorialSoma(3));
+        Assert.assertEquals(1, Fatorial.fatorialSoma(1));
+        Assert.assertEquals(2, Fatorial.fatorialSoma(2));
+        Assert.assertEquals(6, Fatorial.fatorialSoma(3));
+    }
+    
+    //Testes AtendeSomaFatorialDigitos
+    @Test(expected=IllegalArgumentException.class)
+    public void testNumeroInvalidoAtende() {
+        Fatorial.atendeSomaFatorialDigitos(0);
+    }
+    
+    @Test
+    public void testAtendeSomaFatorialDigitos() {
+        Assert.assertTrue(Fatorial.atendeSomaFatorialDigitos(145));
     }
 }
