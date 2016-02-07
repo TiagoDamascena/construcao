@@ -17,8 +17,11 @@ public class Fatorial {
      * @throws IllegalArgumentException caso o numero seja menor que 1.
      */
     public static int fatorial(int numero) {
-        if(numero < 1) {
+        if(numero < 0) {
             throw new IllegalArgumentException("numero inválido");
+        }
+        if(numero == 0) {
+            return 1;
         }
         
         int i = 2;
@@ -41,8 +44,11 @@ public class Fatorial {
      * @throws IllegalArgumentException caso o numero seja menor que 1.
      */
     public static int fatorialSoma(int numero) {
-        if(numero < 1) {
+        if(numero < 0) {
             throw new IllegalArgumentException("numero inválido");
+        }
+        if(numero == 0) {
+            return 1;
         }
         
         int i = 2;
@@ -56,7 +62,7 @@ public class Fatorial {
     }
     
     public static boolean atendeSomaFatorialDigitos(int n) {
-        if(n < 100) {
+        if(n < 0) {
             throw new IllegalArgumentException("numero inválido");
         }
         

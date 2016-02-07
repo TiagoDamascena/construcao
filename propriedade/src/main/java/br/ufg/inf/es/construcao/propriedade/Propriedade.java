@@ -1,5 +1,7 @@
 package br.ufg.inf.es.construcao.propriedade;
 
+import br.ufg.inf.es.construcao.fatorial.Fatorial;
+
 /**
  * Função para verificação das propriedades de um número.
  */
@@ -18,7 +20,7 @@ public class Propriedade {
      */
     public static boolean propriedade153(int numero) {
         if (numero < 0 || numero > 999) {
-            throw new IllegalArgumentException("número inválido");
+            throw new IllegalArgumentException("numero invalido");
         }
         
         int i = numero / 100;
@@ -53,5 +55,18 @@ public class Propriedade {
         n = n * n;
         
         return n == numero;
+    }
+    
+    public static int propriedadeSomaFatorial(){
+        int t = 0;
+        int n = 0;
+        
+        while(n < 1000) {
+            if(Fatorial.atendeSomaFatorialDigitos(n)) {
+                t++;
+            }
+            n++;
+        }
+        return t;
     }
 }

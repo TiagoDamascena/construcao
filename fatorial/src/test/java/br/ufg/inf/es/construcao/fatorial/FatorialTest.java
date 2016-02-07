@@ -7,7 +7,7 @@ public class FatorialTest {
     //Testes Fatorial
     @Test(expected=IllegalArgumentException.class)
     public void testNumeroInvalido() {
-        Fatorial.fatorial(0);
+        Fatorial.fatorial(-1);
     }
 
     @Test
@@ -19,7 +19,7 @@ public class FatorialTest {
     //Testes Fatorial Soma
     @Test(expected=IllegalArgumentException.class)
     public void testNumeroInvalidoSoma() {
-        Fatorial.fatorialSoma(0);
+        Fatorial.fatorialSoma(-1);
     }
     
     @Test
