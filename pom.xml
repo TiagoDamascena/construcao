@@ -33,6 +33,7 @@
         <module>somaDivisores</module>
         <module>amigos</module>
         <module>luhn</module>
+        <module>divide</module>
     </modules>
 
     <build>
