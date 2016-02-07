@@ -32,7 +32,7 @@ public class FatorialTest {
     //Testes AtendeSomaFatorialDigitos
     @Test(expected=IllegalArgumentException.class)
     public void testNumeroInvalidoAtende() {
-        Fatorial.atendeSomaFatorialDigitos(0);
+        Fatorial.atendeSomaFatorialDigitos(-1);
     }
     
     @Test
