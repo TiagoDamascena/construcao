@@ -34,6 +34,7 @@
         <module>amigos</module>
         <module>luhn</module>
         <module>divide</module>
+        <module>cpf</module>
     </modules>
 
     <build>
