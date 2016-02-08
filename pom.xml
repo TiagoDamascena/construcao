@@ -38,6 +38,7 @@
         <module>equacao</module>
         <module>ackerman</module>
         <module>inverte</module>
+        <module>somaNaturais</module>
     </modules>
 
     <build>
