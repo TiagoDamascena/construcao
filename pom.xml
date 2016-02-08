@@ -40,6 +40,7 @@
         <module>inverte</module>
         <module>somaNaturais</module>
         <module>imprimeArray</module>
+        <module>somaArray</module>
     </modules>
 
     <build>
