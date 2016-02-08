@@ -37,6 +37,7 @@
         <module>cpf</module>
         <module>equacao</module>
         <module>ackerman</module>
+        <module>inverte</module>
     </modules>
 
     <build>
