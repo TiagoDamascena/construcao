@@ -42,6 +42,7 @@
         <module>imprimeArray</module>
         <module>somaArray</module>
         <module>divideArray</module>
+        <module>bubleSort</module>
     </modules>
 
     <build>
