@@ -39,6 +39,7 @@
         <module>ackerman</module>
         <module>inverte</module>
         <module>somaNaturais</module>
+        <module>imprimeArray</module>
     </modules>
 
     <build>
