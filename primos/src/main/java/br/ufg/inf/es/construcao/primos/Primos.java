@@ -1,24 +1,21 @@
 package br.ufg.inf.es.construcao.primos;
 
 /**
- * ServiÃ§os relacionados a nÃºmeros primos
+ * Serviõos relacionados a números primos
  */
 public class Primos {
     
     /**
-     * Verifica se um nÃºmero Ã© primo ou nÃ£o
-     *
-     * @param numero NÃºmero a ser verificado
-     *
-     * @return Verdadeiro caso seja primo e falso caso nÃ£o seja
-     *
+     * Verifica se um número é primo ou não
+     * @param numero Número a ser verificado
+     * @return Verdadeiro caso seja primo e falso caso não seja
      * @throws IllegalArgumentException Caso o numero 
-     * nÃ£o estejam na faixa admitida
+     * não estejam na faixa admitida
      * O numero deve ser um valor maior ou igual a 2.
      */
     public static boolean primo(int numero) {
         if (numero <= 1) {
-            throw new IllegalArgumentException("nÃºmero invÃ¡lido");
+            throw new IllegalArgumentException("Número inválido");
         }
         
         int i = 2;
@@ -35,14 +32,12 @@ public class Primos {
     }
     
     /**
-     * Coloca a lista dos n primeiros nÃºmeros primos em um vetor
-     *
-     * @param vetor Vetor que receberÃ¡ a lista de nÃºmeros primos.
-     * @param numero Quantidade de nÃºmeros primos a serem colocados no vetor
-     *
+     * Coloca a lista dos n primeiros números primos em um vetor
+     * @param vetor Vetor que receberá a lista de números primos.
+     * @param numero Quantidade de números primos a serem colocados no vetor
      * @throws IllegalArgumentException Caso o numero 
-     * nÃ£o estejam na faixa admitida, o tamanho do vetor
-     * nÃ£o esteja na faixa admitida e o vetor nÃ£o esteja
+     * não estejam na faixa admitida, o tamanho do vetor
+     * não esteja na faixa admitida e o vetor não esteja
      * povoado por 0.
      * O numero deve ser um valor maior ou igual a 2.
      * O tamanho do vetor deve ser maior ou igual a n.
@@ -50,16 +45,16 @@ public class Primos {
     public static void crivoEratostenes(int[] vetor, int numero)
     {
         if (numero < 2) {
-            throw new IllegalArgumentException("nÃºmero invÃ¡lido");
+            throw new IllegalArgumentException("Número inválido");
         }
 
         if (vetor.length <= numero) {
-            throw new IllegalArgumentException("tamanho do vetor invÃ¡lido");
+            throw new IllegalArgumentException("Tamanho do vetor inválido");
         }
 
         for (int i = 2; i <= numero; i++) {
             if (vetor[i] != 0) {
-                throw new IllegalArgumentException("valor incorreto dentro do vetor");
+                throw new IllegalArgumentException("Valor incorreto dentro do vetor");
             }
         }
 

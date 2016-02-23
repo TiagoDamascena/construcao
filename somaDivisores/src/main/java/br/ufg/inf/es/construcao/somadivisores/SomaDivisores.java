@@ -3,22 +3,19 @@ package br.ufg.inf.es.construcao.somadivisores;
 import br.ufg.inf.es.construcao.mod.Mod;
 
 /**
- * Fornece uma funÃ§Ã£o para o calculo da soma de divisores
+ * Fornece uma função para o calculo da soma de divisores
  */
 public class SomaDivisores {
     
     /**
-     * Calcula a soma dos divisores de um nÃºmero
-     *
-     * @param numero nÃºmero do qual os divisores serÃ£o somados
-     *
-     * @return soma dos divisores do nÃºmero
-     *
-     * @throws IllegalArgumentException caso o nÃºmero seja menor ou igual a 0
+     * Calcula a soma dos divisores de um número
+     * @param numero núero do qual os divisores serão somados
+     * @return soma dos divisores do número
+     * @throws IllegalArgumentException caso o número seja menor ou igual a 0
      */
     public static int somaDivisores(int numero) {
         if(numero <= 0) {
-            throw new IllegalArgumentException("numero invalido");
+            throw new IllegalArgumentException("Número invalido");
         }
         
         int divisor = 2;

@@ -1,38 +1,35 @@
 package br.ufg.inf.es.construcao.calendario;
 
 /**
- * ServiÃ§os oferecidos para manipulaÃ§Ã£o
- * de informaÃ§Ãµes de calendÃ¡rio.
+ * Serviços oferecidos para manipulação
+ * de informações de calendário.
  */
 public class Calendario {
 
     /**
-     * ObtÃ©m o dia da semana de uma dada data.
-     *
+     * Obtém o dia da semana de uma dada data.
      * @param dia O dia da data.
-     * @param mes O mÃªs da data.
+     * @param mes O mês da data.
      * @param ano O ano da data.
-     *
      * @return O valor 0 para segunda-feira, 1 para
-     * terÃ§a-feira e assim sucessivamente.
-     *
-     * @throws IllegalArgumentException Caso o dia, o mÃªs
-     * ou o ano fornecidos nÃ£o estejam na faixa admitida.
+     * terça-feira e assim sucessivamente.
+     * @throws IllegalArgumentException Caso o dia, o mês
+     * ou o ano fornecidos não estejam na faixa admitida.
      * O dia deve ser um valor de 1 a 31, inclusive.
-     * O mÃªs deve ser um valor de 1 a 12, inclusive.
+     * O mês deve ser um valor de 1 a 12, inclusive.
      * O ano deve ser um valor maior que 1752.
      */
     public static int diaDaSemana(int dia, int mes, int ano) {
         if (dia < 1 || dia > 31) {
-            throw new IllegalArgumentException("dia invÃ¡lido");
+            throw new IllegalArgumentException("Dia inválido");
         }
 
         if (mes < 1 || mes > 12) {
-            throw new IllegalArgumentException("mÃªs invÃ¡lido");
+            throw new IllegalArgumentException("Mês inválido");
         }
 
         if (ano < 1753) {
-            throw new IllegalArgumentException("ano invÃ¡lido");
+            throw new IllegalArgumentException("Ano inválido");
         }
 
         if (mes == 1 || mes == 2) {

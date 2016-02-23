@@ -1,17 +1,22 @@
 package br.ufg.inf.es.construcao.inverte;
 
 /**
- * 
+ * Inverte os caracteres de uma string
  */
 public class Inverte {
     
-    public static String inverte(String s) {
-        if(s.length() == 1) {
-            return s;
+    /**
+     * Inverte os caracteres de uma dada string
+     * @param palavra string a ser invertida
+     * @return String invertida
+     */
+    public static String inverte(String palavra) {
+        if(palavra.length() == 1) {
+            return palavra;
         } else {
-            String lc = s.substring(s.length()-1);
-            String s1 = s.substring(0,s.length()-1);
-            return lc + inverte(s1);
+            String ultimoChar = palavra.substring(palavra.length()-1);
+            String restoString = palavra.substring(0,palavra.length()-1);
+            return ultimoChar + inverte(restoString);
         }
     }
 }

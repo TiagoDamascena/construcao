@@ -3,24 +3,21 @@ package br.ufg.inf.es.construcao.propriedade;
 import br.ufg.inf.es.construcao.fatorial.Fatorial;
 
 /**
- * FunÃ§Ã£o para verificaÃ§Ã£o das propriedades de um nÃºmero.
+ * Função para verificação das propriedades de um número.
  */
 public class Propriedade {
 
     /**
-     * Verifica se um nÃºmero atende a propriedade 153
-     *
+     * Verifica se um número atende a propriedade 153
      * @param numero Numero a ser verificado.
-     *
-     * @return Verdadeiro caso atenda, e falso caso nÃ£o atenda.
-     *
+     * @return Verdadeiro caso atenda, e falso caso não atenda.
      * @throws IllegalArgumentException Caso o numero 
-     * nÃ£o estejam na faixa admitida.
+     * não estejam na faixa admitida.
      * O numero deve ser um valor maior ou igual a 0 e menor ou igual a 999.
      */
     public static boolean propriedade153(int numero) {
         if (numero < 0 || numero > 999) {
-            throw new IllegalArgumentException("numero invalido");
+            throw new IllegalArgumentException("Número inválido");
         }
         
         int i = numero / 100;
@@ -33,19 +30,16 @@ public class Propriedade {
     }
     
     /**
-     * Verifica se um nÃºmero atende a propriedade 3025
-     *
+     * Verifica se um número atende a propriedade 3025
      * @param numero Numero a ser verificado.
-     *
-     * @return Verdadeiro caso atenda, e falso caso nÃ£o atenda.
-     *
+     * @return Verdadeiro caso atenda, e falso caso não atenda.
      * @throws IllegalArgumentException Caso o numero 
-     * nÃ£o estejam na faixa admitida.
+     * não estejam na faixa admitida.
      * O numero deve ser um valor maior ou igual a 0 e menor ou igual a 9999.
      */
     public static boolean propriedade3025(int numero) {
         if (numero < 0 || numero > 9999) {
-            throw new IllegalArgumentException("nÃºmero invÃ¡lido");
+            throw new IllegalArgumentException("Número inválido");
         }
         
         int i = numero / 100;
@@ -57,16 +51,20 @@ public class Propriedade {
         return n == numero;
     }
     
+    /**
+     * Calcula a quantidade de números de 0 a 1000 que atendem a propriedade da soma dos fatoriais
+     * @return número de dígitos que atendem a propriedade
+     */
     public static int propriedadeSomaFatorial(){
-        int t = 0;
-        int n = 0;
+        int total = 0;
+        int num = 0;
         
-        while(n < 1000) {
-            if(Fatorial.atendeSomaFatorialDigitos(n)) {
-                t++;
+        while(num < 1000) {
+            if(Fatorial.atendeSomaFatorialDigitos(num)) {
+                total++;
             }
-            n++;
+            num++;
         }
-        return t;
+        return total;
     }
 }

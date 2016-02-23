@@ -1,22 +1,19 @@
 package br.ufg.inf.es.construcao.fibonacci;
 
 /**
- * FunÃ§Ã£o para obter um nÃºmero da sequÃªncia de Fibonacci
+ * Função para obter um número da sequência de Fibonacci
  */
 public class Fibonacci {
     
     /**
-     * Calcula um determinado nÃºmero na sequÃªncia de fibonacci.
-     *
-     * @param numero qual nÃºmero da sequÃªncia.
-     *
-     * @return o nÃºmero de fibonacci na posiÃ§Ã£o solicitada dentro da sequÃªncia.
-     *
+     * Calcula um determinado número na sequência de fibonacci.
+     * @param numero qual número da sequência.
+     * @return o número de fibonacci na posição solicitada dentro da sequência.
      * @throws  IllegalArgumentException caso o numero informado seja menor que 0.
      */
     public static int fibonacci(int numero) {
         if(numero < 0) {
-            throw new IllegalArgumentException("numero invÃ¡lido");
+            throw new IllegalArgumentException("Número inválido");
         }
         
         int anterior = 0;

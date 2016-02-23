@@ -4,6 +4,17 @@ import org.junit.Test;
 import org.junit.Assert;
 
 public class AckermanTest {
+    
+    @Test(expected=IllegalArgumentException.class)
+    public void testXInvalido() {
+        Ackerman.ackerman(-1, 0);
+    }
+    
+    @Test(expected=IllegalArgumentException.class)
+    public void testYInvalido() {
+        Ackerman.ackerman(0, -1);
+    }
+    
     @Test
     public void testAckerman() {
         Assert.assertEquals(1, Ackerman.ackerman(0, 0));
@@ -11,5 +22,4 @@ public class AckermanTest {
         Assert.assertEquals(61, Ackerman.ackerman(3, 3));
         Assert.assertEquals(125, Ackerman.ackerman(3, 4));
     }
-    
 }

@@ -1,28 +1,33 @@
 package br.ufg.inf.es.construcao.bublesort;
 
 /**
- * 
+ * Implementa o algoritmo de ordenação Buble Sort
  */
 public class BubleSort {
     
-    public static void bubleSort(int[] a, int n) {
-        if (n < 0) {
-            throw new IllegalArgumentException("n inválido");
+    /**
+     * Ordena um vetor de inteiros utilizando o algoritmo buble sort
+     * @param vetor vetor a ser ordenado
+     * @param tamanho tamanho do vetor a ser ordenado
+     */
+    public static void bubleSort(int[] vetor, int tamanho) {
+        if (tamanho < 0) {
+            throw new IllegalArgumentException("Tamanho inválido");
         }
         
-        int p = n;
+        int posicao = tamanho;
         
-        while(p >= 1) {
+        while(posicao >= 1) {
             int i = 0;
-            while(i < p) {
-                if(a[i] > a[i+1]) {
-                    int t = a[i];
-                    a[i] = a[i+1];
-                    a[i+1] = t;
+            while(i < posicao) {
+                if(vetor[i] > vetor[i+1]) {
+                    int t = vetor[i];
+                    vetor[i] = vetor[i+1];
+                    vetor[i+1] = t;
                 }
                 i++;
             }
-            p--;
+            posicao--;
         }
     }
 }

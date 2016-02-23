@@ -1,24 +1,21 @@
 package br.ufg.inf.es.construcao.funcoes;
 
 /**
- * FunÃ§Ãµes matemÃ¡ticas.
+ * Funções matemáticas.
  */
 public class Matematica {
 
     /**
      * Produz a soma dos primeiros naturais.
-     *
      * @param numero A quantidade dos primeiros naturais
      * a serem somados.
-     *
      * @return Soma dos primeiros naturais.
-     *
      * @throws IllegalArgumentException Se o argumento
      * for menor que um.
      */
     public static int somaNaturais(int numero) {
         if (numero < 1) {
-            throw new IllegalArgumentException("numero invÃ¡lido");
+            throw new IllegalArgumentException("Número inválido");
         }
 
         int i = 2;

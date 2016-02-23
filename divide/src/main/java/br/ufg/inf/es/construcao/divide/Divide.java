@@ -5,39 +5,39 @@ import br.ufg.inf.es.construcao.mod.Mod;
 import br.ufg.inf.es.construcao.produto.Produto;
 
 /**
- * 
+ * Divisão
  */
 public class Divide {
     
     /**
-     * 
-     * @param a
-     * @param b
-     * @param k 
+     * Divide um número por outro
+     * @param divisor Divisor
+     * @param dividendo Dividendo
+     * @param precisao Número de casas decimais a calcular
      */
-    public static void divide(int a, int b, int k) {
-        if (a <= 0) {
-            throw new IllegalArgumentException("a inválido");
+    public static void divide(int divisor, int dividendo, int precisao) {
+        if (divisor <= 0) {
+            throw new IllegalArgumentException("Divisor inválido");
         }
-        if (b <= 0) {
-            throw new IllegalArgumentException("b inválido");
+        if (dividendo <= 0) {
+            throw new IllegalArgumentException("Dividendo inválido");
         }
         
-        int d = Divisao.divideSomas(a, b);
-        System.out.print(d);
+        int divisao = Divisao.divideSomas(divisor, dividendo);
+        System.out.print(divisao);
         
-        int r = Mod.mod(a, b);
+        int resto = Mod.mod(divisor, dividendo);
         
-        if(r != 0) {
+        if(resto != 0) {
             System.out.print(",");
         }
         
-        while(r != 0 && k > 0) {
-            r = (int)Produto.produto(10, r);
-            d = Divisao.divideSomas(r, b);
-            System.out.print(d);
-            r = Mod.mod(r, b);
-            k--;
+        while(resto != 0 && precisao > 0) {
+            resto = (int)Produto.produto(10, resto);
+            divisao = Divisao.divideSomas(resto, dividendo);
+            System.out.print(divisao);
+            resto = Mod.mod(resto, dividendo);
+            precisao--;
         }
     }
 }

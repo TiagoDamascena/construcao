@@ -1,33 +1,27 @@
 package br.ufg.inf.es.construcao.mod;
 
-import br.ufg.inf.es.construcao.divisao.Divisao;
-
 /**
- * Fornece funções de cálculo de mod(resto da divisão inteira)
+ * Fornece fun��es de c�lculo de mod(resto da divis�o inteira)
  */
 public class Mod {
     
     /**
-     * Calcula o mod(resto) de uma divisão
-     *
-     * @param divisor Divisor da divisão
-     * @param dividendo Dividendo da divisão
-     *
-     * @return O resto da divisão
-     *
+     * Calcula o mod(resto) de uma divis�o
+     * @param divisor Divisor da divis�o
+     * @param dividendo Dividendo da divis�o
+     * @return O resto da divis�o
      * @throws IllegalArgumentException caso algum argumeto esteja fora
      * da faixa admitida.
      * Divisor deve ser maior que 0.
      * Dividendo deve ser maior ou igual a 0;
      */
     public static int mod(int divisor, int dividendo) {
-        
         if(divisor <= 0) {
-            throw new IllegalArgumentException("divisor inválido");
+            throw new IllegalArgumentException("Divisor inv�lido");
         }
         
         if(dividendo < 0) {
-            throw new IllegalArgumentException("dividendo inválido");
+            throw new IllegalArgumentException("Dividendo inv�lido");
         }
         
         int soma = divisor;
@@ -37,33 +31,5 @@ public class Mod {
         }
         
         return soma;
-    }
-    
-    /**
-     * Calcula o mod(resto) de uma divisão
-     *
-     * @param divisor Divisor da divisão
-     * @param dividendo Dividendo da divisão
-     *
-     * @return O resto da divisão
-     *
-     * @throws IllegalArgumentException caso algum argumeto esteja fora
-     * da faixa admitida.
-     * Divisor deve ser maior que 0.
-     * Dividendo deve ser maior que 0;
-     */
-    public static int modSimples(int divisor, int dividendo) {
-        
-        if(divisor <= 0) {
-            throw new IllegalArgumentException("divisor inválido");
-        }
-        
-        if(dividendo <= 0) {
-            throw new IllegalArgumentException("dividendo inválido");
-        }
-        
-        int divisao = Divisao.divideSubtracao(divisor, dividendo);
-        
-        return divisor - (divisao * dividendo);
     }
 }

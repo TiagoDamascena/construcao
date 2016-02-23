@@ -4,28 +4,25 @@ import br.ufg.inf.es.construcao.potencia.Potencia;
 import br.ufg.inf.es.construcao.fatorial.Fatorial;
 
 /**
- * Fornece funÃ§Ãµes relacionadas a Logaritmos
+ * Fornece funções relacionadas a Logaritmos
  */
 public class Logaritmo {
     
     /**
      * Calcula o log de um numero em uma determinada base
-     * 
      * @param numero numero do calculo
      * @param base base do calculo
-     * 
      * @return resultado do log
-     * 
      * @throws IllegalArgumentException quando numero for 
      * menor que 1 e a base for menor que 2.
      */
     public static int logNaturalSimples(int numero, int base) {
         if(numero < 1) {
-            throw new IllegalArgumentException("numero invÃ¡lido");
+            throw new IllegalArgumentException("Número inválido");
         }
         
         if(base < 2) {
-            throw new IllegalArgumentException("base invÃ¡lida");
+            throw new IllegalArgumentException("Base inválida");
         }
         
         int i = 2;
@@ -42,22 +39,19 @@ public class Logaritmo {
     
     /**
      * Calcula o log de um numero em uma determinada base
-     * 
      * @param numero numero do calculo
      * @param base base do calculo
-     * 
      * @return resultado do log
-     * 
      * @throws IllegalArgumentException quando numero for 
      * menor que 1 e a base for menor que 2.
      */
     public static int logN(int numero, int base) {
         if(numero < 1) {
-            throw new IllegalArgumentException("numero invÃ¡lido");
+            throw new IllegalArgumentException("Número inválido");
         }
         
         if(base < 2) {
-            throw new IllegalArgumentException("base invÃ¡lida");
+            throw new IllegalArgumentException("Base inválida");
         }
         
         int i = 2;

@@ -1,29 +1,26 @@
 package br.ufg.inf.es.construcao.divisao;
 
 /**
- * Fornece fun√ß√µes para divis√£o de inteiros
+ * Fornece funÁıes para divis„o de inteiros
  */
 public class Divisao {
     
     /**
-     * Realiza a divis√£o de um n√∫mero por outro atrav√©s de somas sucessivas
-     *
-     * @param divisor Divisor da divis√£o.
-     * @param dividendo Dividendo da divis√£o.
-     *
-     * @return resultado da divis√£o.
-     *
+     * Realiza a divis„o de um n˙mero por outro atrav√©s de somas sucessivas
+     * @param divisor Divisor da divis„o.
+     * @param dividendo Dividendo da divis„o.
+     * @return resultado da divis„o.
      * @throws IllegalArgumentException caso um dos valores esteja fora da faixa admitida.
      * Divisor deve ser maior ou igual a 0
      * Dividendo deve ser maior que 0
      */
     public static int divideSomas(int divisor, int dividendo) {
         if(divisor < 0) {
-            throw new IllegalArgumentException("divisor inv√°lido");
+            throw new IllegalArgumentException("Divisor inv·lido");
         }
                 
         if(dividendo <= 0) {
-            throw new IllegalArgumentException("dividendo inv√°lido");
+            throw new IllegalArgumentException("Dividendo inv·lido");
         }
         
         int divisao = 0;
@@ -38,25 +35,21 @@ public class Divisao {
     }
     
     /**
-     * Realiza a divis√£o de um n√∫mero por outro atrav√©s de subtra√ß√µes sucessivas
-     *
-     * @param divisor Divisor da divis√£o.
-     * @param dividendo Dividendo da divis√£o.
-     *
-     * @return resultado da divis√£o.
-     *
+     * Realiza a divis„o de um n˙mero por outro atrav√©s de subtraÁıes sucessivas
+     * @param divisor Divisor da divis„o.
+     * @param dividendo Dividendo da divis„o.
+     * @return resultado da divis„o.
      * @throws IllegalArgumentException caso um dos valores esteja fora da faixa admitida.
-     *
      * Divisor deve ser maior ou igual a 0
      * Dividendo deve ser maior que 0
      */
     public static int divideSubtracao(int divisor, int dividendo) {
         if(divisor < 0) {
-            throw new IllegalArgumentException("divisor inv√°lido");
+            throw new IllegalArgumentException("divisor inv·lido");
         }
                 
         if(dividendo <= 0) {
-            throw new IllegalArgumentException("dividendo inv√°lido");
+            throw new IllegalArgumentException("dividendo inv·lido");
         }
         
         int divisao = 0;

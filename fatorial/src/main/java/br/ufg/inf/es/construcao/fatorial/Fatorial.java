@@ -3,22 +3,19 @@ package br.ufg.inf.es.construcao.fatorial;
 import br.ufg.inf.es.construcao.produto.Produto;
 
 /**
- * FunÃ§Ãµes para cÃ¡lculo do fatorial
+ * Funções para cálculo do fatorial
  */
 public class Fatorial {
     
     /**
-     * Calcula o fatorial de um nÃºmero
-     *
-     * @param numero nÃºmero para calcular o fatorial.
-     *
+     * Calcula o fatorial de um número
+     * @param numero número para calcular o fatorial.
      * @return fatorial.
-     *
      * @throws IllegalArgumentException caso o numero seja menor que 1.
      */
     public static int fatorial(int numero) {
         if(numero < 0) {
-            throw new IllegalArgumentException("numero invÃ¡lido");
+            throw new IllegalArgumentException("Número inválido");
         }
         if(numero == 0) {
             return 1;
@@ -35,17 +32,14 @@ public class Fatorial {
     }
     
     /**
-     * Calcula o fatorial de um nÃºmero atravÃ©s de somas
-     *
-     * @param numero nÃºmero para calcular o fatorial.
-     *
+     * Calcula o fatorial de um número através de somas
+     * @param numero número para calcular o fatorial.
      * @return fatorial.
-     *
      * @throws IllegalArgumentException caso o numero seja menor que 1.
      */
     public static int fatorialSoma(int numero) {
         if(numero < 0) {
-            throw new IllegalArgumentException("numero invÃ¡lido");
+            throw new IllegalArgumentException("Número inválido");
         }
         if(numero == 0) {
             return 1;
@@ -61,16 +55,21 @@ public class Fatorial {
         return fatorial;
     }
     
-    public static boolean atendeSomaFatorialDigitos(int n) {
-        if(n < 0) {
-            throw new IllegalArgumentException("numero invÃ¡lido");
+    /**
+     * Verifica se a soma dos fatoriais dos dígitos é igual ao número
+     * @param numero número para ser verificado
+     * @return true caso cumpra e false caso contrario
+     */
+    public static boolean atendeSomaFatorialDigitos(int numero) {
+        if(numero < 0) {
+            throw new IllegalArgumentException("Número inválido");
         }
         
-        int a = n / 100;
-        int b = (n - 100 * a) / 10;
-        int c = n % 10;
+        int a = numero / 100;
+        int b = (numero - 100 * a) / 10;
+        int c = numero % 10;
         int s = fatorial(a) + fatorial(b) + fatorial(c);
         
-        return s == n;
+        return s == numero;
     }
 }

@@ -3,10 +3,6 @@ package br.ufg.inf.es.construcao.inverte;
 import org.junit.Test;
 import org.junit.Assert;
 
-/**
- *
- * @author tiago
- */
 public class InverteTest {
 
     @Test

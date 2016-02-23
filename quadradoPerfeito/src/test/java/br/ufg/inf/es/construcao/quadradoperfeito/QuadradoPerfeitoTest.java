@@ -16,7 +16,7 @@ public class QuadradoPerfeitoTest {
         Assert.assertTrue(QuadradoPerfeito.quadradoPerfeito(25));
     }
     
-        @Test
+    @Test
     public void testNaoQuadrados() {
         Assert.assertFalse(QuadradoPerfeito.quadradoPerfeito(10));
         Assert.assertFalse(QuadradoPerfeito.quadradoPerfeito(72));

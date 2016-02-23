@@ -1,22 +1,19 @@
 package br.ufg.inf.es.construcao.harmonico;
 
 /**
- *  FunÃ§Ã£o para cÃ¡lculo do harmÃ´nico de um nÃºmero
+ *  Função para cálculo do harmônico de um número
  */
 public class Harmonico {
     
     /**
-     * Calcula o numero harmÃ´nico de um nÃºmero
-     *
-     * @param numero nÃºmero do qual serÃ¡ calculado o harmÃ´nico
-     * 
-     * @return o harmÃ´nico do nÃºmero
-     * 
-     * @throws IllegalArgumentException Caso o nÃºmero seja menor que 1
+     * Calcula o numero harmônico de um número
+     * @param numero número do qual será calculado o harmônico
+     * @return o harmônico do número
+     * @throws IllegalArgumentException Caso o número seja menor que 1
      */
     public static double numeroHarmonico(int numero) {
         if(numero < 1) {
-            throw new IllegalArgumentException("numero invÃ¡lido");
+            throw new IllegalArgumentException("Número inválido");
         }
         
         int i = 2;

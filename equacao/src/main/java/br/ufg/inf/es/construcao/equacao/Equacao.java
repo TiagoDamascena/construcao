@@ -1,12 +1,16 @@
 package br.ufg.inf.es.construcao.equacao;
 
 /**
- * 
+ * Equações
  */
 public class Equacao {
     
+    /**
+     * Calcula o numero de soluções de uma determinada equação
+     * @return número de soluçõess
+     */
     public static int equacao() {
-        int s = 0;
+        int solucoes = 0;
         int x = 1;
         
         while(x <= 96) {
@@ -17,7 +21,7 @@ public class Equacao {
                     int w = 1;
                     while(w <= 28) {
                         if(2*x + 3*y + 5*z + 7*w == 210) {
-                            s++;
+                            solucoes++;
                         }
                         w++;
                     }
@@ -27,6 +31,6 @@ public class Equacao {
             }
             x++;
         }
-        return s;
+        return solucoes;
     }
 }

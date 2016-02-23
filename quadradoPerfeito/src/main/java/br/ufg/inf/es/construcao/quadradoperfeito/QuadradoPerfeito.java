@@ -1,22 +1,19 @@
 package br.ufg.inf.es.construcao.quadradoperfeito;
 
 /**
- * FunÃ§Ãµes relacionadas a um quadrado perfeito
+ * Funções relacionadas a um quadrado perfeito
  */
 public class QuadradoPerfeito {
     
     /**
-     * verifica se um nÃºmero Ã© um quadrado perfeito.
-     *
-     * @param numero numero a ser verificado.
-     *
+     * verifica se um número a um quadrado perfeito.
+     * @param numero número a ser verificado.
      * @return verdadeiro caso o numero seja um quadrado perfeito e falso caso contrÃ¡rio.
-     *
-     * @throws caso o nÃºmero seja menor que 1.
+     * @throws caso o número seja menor que 1.
      */
     public static boolean quadradoPerfeito(int numero) {
         if(numero < 1) {
-            throw new IllegalArgumentException("numero invÃ¡lido");
+            throw new IllegalArgumentException("Número inválido");
         }
         
         int i = 1;

@@ -1,30 +1,27 @@
 package br.ufg.inf.es.construcao.potencia;
 
 /**
- * FunÃ§Ã£o para calculo da potencia de um numero.
+ * Função para calculo da potencia de um numero.
  */
 public class Potencia {
 
     /**
-     * Calcula a potÃªncia de um nÃºmero elevado a outro.
-     *
-     * @param base Base da exponenciaÃ§Ã£o.
-     * @param expoente Expoente da exponenciaÃ§Ã£o.
-     *
-     * @return O resultado da exponenciaÃ§Ã£o.
-     *
+     * Calcula a potência de um número elevado a outro.
+     * @param base Base da exponenciação.
+     * @param expoente Expoente da exponenciação.
+     * @return O resultado da exponenciação.
      * @throws IllegalArgumentException Caso a base ou 
-     * o expoente nÃ£o estejam na faixa admitida.
+     * o expoente não estejam na faixa admitida.
      * A base deve ser um valor maior que 0.
-     * O expoente nÃ£o pode ser negativo.
+     * O expoente não pode ser negativo.
      */
     public static double potencia(double base, int expoente) {
         if (base <= 0) {
-            throw new IllegalArgumentException("base invÃ¡lida");
+            throw new IllegalArgumentException("Base inválida");
         }
         
         if (expoente < 0) {
-            throw new IllegalArgumentException("expoente invÃ¡lido");
+            throw new IllegalArgumentException("Expoente inválido");
         }
         
         int i = 1;
@@ -39,25 +36,22 @@ public class Potencia {
     }
     
     /**
-     * Calcula a potÃªncia de um nÃºmero elevado a outro atravÃ©s de somas.
-     *
-     * @param base Base da exponenciaÃ§Ã£o.
-     * @param expoente Expoente da exponenciaÃ§Ã£o.
-     *
-     * @return O resultado da exponenciaÃ§Ã£o.
-     *
+     * Calcula a potência de um número elevado a outro através de somas.
+     * @param base Base da exponenciação.
+     * @param expoente Expoente da exponenciação.
+     * @return O resultado da exponenciação.
      * @throws IllegalArgumentException Caso a base ou 
-     * o expoente nÃ£o estejam na faixa admitida.
+     * o expoente não estejam na faixa admitida.
      * A base deve ser um valor maior que 0.
-     * O expoente nÃ£o pode ser negativo.
+     * O expoente não pode ser negativo.
      */
     public static double potenciaSoma(double base, int expoente) {
         if (base <= 0) {
-            throw new IllegalArgumentException("base invÃ¡lida");
+            throw new IllegalArgumentException("Base inválida");
         }
         
         if (expoente < 0) {
-            throw new IllegalArgumentException("expoente invÃ¡lido");
+            throw new IllegalArgumentException("Expoente inválido");
         }
         
         int i = 1;

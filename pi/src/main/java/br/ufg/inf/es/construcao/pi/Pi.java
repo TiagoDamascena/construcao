@@ -6,17 +6,14 @@ package br.ufg.inf.es.construcao.pi;
 public class Pi {
     
     /**
-     * Algoritmo para obtenÃ§Ã£o do valor de Pi a partir do somatÃ³rio de n termos.
-     *
-     * @param numero nÃºmero de termos do somatÃ³rio de Pi, quanto maior mais preciso o resultado.
-     *
+     * Algoritmo para obtenção do valor de Pi a partir do somatório de n termos.
+     * @param numero número de termos do somatório de Pi, quanto maior mais preciso o resultado.
      * @return O valor calculado de Pi.
-     *
-     * @throws IllegalArgumentException quando o nÃºmero Ã© menor que 1.
+     * @throws IllegalArgumentException quando o número é menor que 1.
      */
     public static double pi(int numero) {
         if(numero < 1) {
-            throw new IllegalArgumentException("numero invÃ¡lido");
+            throw new IllegalArgumentException("Número inválido");
         }
         
         int i = 1;

@@ -1,16 +1,14 @@
 package br.ufg.inf.es.construcao.paridade;
 
 /**
- * ImplementaÃ§Ã£o de verificaÃ§Ã£o de paridade.
+ * Implementação de verificação de paridade.
  */
 public class Paridade {
 
     /**
-     * Verifica paridade de um nÃºmero.
-     *
-     * @param numero NÃºmero cuja paridade Ã© verificada.
-     *
-     * @return {@code true} se o nÃºmero fornecido Ã©
+     * Verifica paridade de um número.
+     * @param numero Número cuja paridade é verificada.
+     * @return {@code true} se o número fornecido é
      * par e {@code false}, caso contrÃ¡rio.
      */
     public static boolean verifica(int numero) {

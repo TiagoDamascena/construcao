@@ -3,14 +3,19 @@ package br.ufg.inf.es.construcao;
 import java.util.List;
 
 /**
- * Implementa vers√£o recursiva de permuta√ß√£o de elementos
+ * Implementa vers„o recursiva de permutaÁ„o de elementos
  * de um conjunto.
  */
 public class Permutacao {
-    public static List<String> permuta(
-            String prefixo,
-            String conjunto,
-            List<String> resultadoParcial) {
+    
+    /**
+     * Permuta os elementos de uma lista
+     * @param prefixo prefixo a ser inserido
+     * @param conjunto string a ser permutada
+     * @param resultadoParcial lista de strings formadas
+     * @return 
+     */
+    public static List<String> permuta(String prefixo, String conjunto, List<String> resultadoParcial) {
         if (conjunto.length() == 1) {
             resultadoParcial.add(prefixo + conjunto);
             return resultadoParcial;
