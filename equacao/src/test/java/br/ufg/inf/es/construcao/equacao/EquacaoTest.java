@@ -6,8 +6,7 @@ import org.junit.Assert;
 public class EquacaoTest {
 
     @Test
-    public void testEquacao() {
+    public void testSolucoesEquacao() {
         Assert.assertEquals(6489, Equacao.equacao());
     }
-    
 }

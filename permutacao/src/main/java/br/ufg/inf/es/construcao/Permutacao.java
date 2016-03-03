@@ -3,17 +3,17 @@ package br.ufg.inf.es.construcao;
 import java.util.List;
 
 /**
- * Implementa versão recursiva de permutação de elementos
- * de um conjunto.
+ * Implementa versão recursiva de permutação de elementos de um conjunto.
  */
 public class Permutacao {
-    
+
     /**
      * Permuta os elementos de uma lista
+     *
      * @param prefixo prefixo a ser inserido
      * @param conjunto string a ser permutada
      * @param resultadoParcial lista de strings formadas
-     * @return 
+     * @return
      */
     public static List<String> permuta(String prefixo, String conjunto, List<String> resultadoParcial) {
         if (conjunto.length() == 1) {

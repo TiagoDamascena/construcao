@@ -41,8 +41,12 @@
         <module>somaNaturais</module>
         <module>imprimeArray</module>
         <module>somaArray</module>
-        <module>divideArray</module>
+        <module>mediaArray</module>
+        <module>raiz</module>
         <module>bubleSort</module>
+        <module>hipotenusa</module>
+        <module>polHorner</module>
+        <module>polSimples</module>
     </modules>
 
     <build>

@@ -9,11 +9,12 @@ public class InverteTest {
     public void testInverteUm() {
         Assert.assertEquals("a", Inverte.inverte("a"));
     }
-    
+
     @Test
-    public void testInverte() {
+    public void testInverteAlgumasPalavras() {
         Assert.assertEquals("iO", Inverte.inverte("Oi"));
         Assert.assertEquals("anoicnuf", Inverte.inverte("funciona"));
+        Assert.assertEquals("invertido", Inverte.inverte("oditrevni"));
     }
-    
+
 }

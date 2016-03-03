@@ -4,15 +4,19 @@ import static junit.framework.Assert.assertEquals;
 import org.junit.Test;
 
 public class SomatorioTest {
-    
-    @Test(expected=IllegalArgumentException.class)
+
+    @Test(expected = IllegalArgumentException.class)
     public void testNumeroInvalido() {
         Somatorio.somatorio(0);
     }
-    
+
     @Test
-    public void testSomatorio() {
+    public void testCasoDeFronteiraSomatorio() {
         assertEquals(0.5, Somatorio.somatorio(1), 0.0);
+    }
+
+    @Test
+    public void testSomatorioTriviais() {
         assertEquals(0.7, Somatorio.somatorio(2), 0.0);
     }
 }

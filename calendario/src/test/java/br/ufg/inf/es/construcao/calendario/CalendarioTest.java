@@ -5,17 +5,17 @@ import static junit.framework.Assert.assertEquals;
 
 public class CalendarioTest {
 
-    @Test(expected=IllegalArgumentException.class)
+    @Test(expected = IllegalArgumentException.class)
     public void testDiaInvalido() {
         Calendario.diaDaSemana(-1, 8, 2015);
     }
 
-    @Test(expected=IllegalArgumentException.class)
+    @Test(expected = IllegalArgumentException.class)
     public void testMesInvalido() {
         Calendario.diaDaSemana(1, 45, 2015);
     }
 
-    @Test(expected=IllegalArgumentException.class)
+    @Test(expected = IllegalArgumentException.class)
     public void testAnoInvalido() {
         Calendario.diaDaSemana(1, 5, 100);
     }

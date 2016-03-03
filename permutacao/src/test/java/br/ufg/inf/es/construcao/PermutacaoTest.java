@@ -6,10 +6,8 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by kyriosdata on 11/12/15.
- */
 public class PermutacaoTest {
+
     @Test
     public void testCasoTrivial() {
         List<String> retorno = Permutacao.permuta("", "a", new ArrayList<String>());

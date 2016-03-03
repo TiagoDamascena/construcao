@@ -4,17 +4,16 @@ import org.junit.Test;
 import org.junit.Assert;
 
 public class PropriedadeTest {
-    
-    //Testes propriedade153
+
     @Test(expected = IllegalArgumentException.class)
     public void testNumeroInvalido153() {
         Propriedade.propriedade153(-2);
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void testCasoDeFronteira153() {
-        Propriedade.propriedade153(-1);
-        Propriedade.propriedade153(1000);
+        Assert.assertFalse(Propriedade.propriedade153(0));
+        Assert.assertFalse(Propriedade.propriedade153(999));
     }
 
     @Test
@@ -23,20 +22,19 @@ public class PropriedadeTest {
     }
 
     @Test
-    public void testFalse153() {
+    public void testNaoAtende53() {
         Assert.assertFalse(Propriedade.propriedade153(12));
     }
-    
-    //Teste propriedade3025
+
     @Test(expected = IllegalArgumentException.class)
     public void testNumeroInvalido3025() {
         Propriedade.propriedade3025(-5);
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void testCasoDeFronteira3025() {
-        Propriedade.propriedade3025(-1);
-        Propriedade.propriedade3025(10000);
+        Assert.assertTrue(Propriedade.propriedade3025(0));
+        Assert.assertFalse(Propriedade.propriedade3025(9999));
     }
 
     @Test
@@ -48,13 +46,12 @@ public class PropriedadeTest {
     public void testCasoNaoTrivial3025() {
         Assert.assertTrue(Propriedade.propriedade3025(9801));
     }
-    
+
     @Test
-    public void testFalse3025() {
+    public void testNaoAtende3025() {
         Assert.assertFalse(Propriedade.propriedade3025(3205));
     }
-    
-    //Teste PropriedadeSomaFatorial
+
     @Test
     public void testPropriedadeSomaFatorial() {
         Assert.assertEquals(1, Propriedade.propriedadeSomaFatorial());
